@@ -85,6 +85,8 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
             // Intentamos encontrar la lada en el objeto 'americaCountries'
             let flag = americaCountries[lada];
 
+
+
             // Si no encontramos una bandera, probamos con los primeros 2 dígitos
             if (!flag) {
                 lada = phoneNumber.slice(0, 2);  // Probamos con los primeros 2 dígitos
