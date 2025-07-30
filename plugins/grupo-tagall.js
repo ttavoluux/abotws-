@@ -122,7 +122,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
         //teks += `${flag} *@${mem.id.split('@')[0]}*\n`;
 
 
-        teks += `\n                                                     ᴬʳˡᵉᵗᵗᴮᵒᵗ`;
+        teks += `\n                                                     ᴬʳˡᵉᵗᵗᴮᵒᵗ⁺`;
 
         conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) });
 
@@ -134,7 +134,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
         for (let mem of participants) {
             teks += `*@${mem.id.split('@')[0]}* `}
         teks += `\n`
-        teks += `\n                                                     ᴬʳˡᵉᵗᵗᴮᵒᵗ`
+        teks += `\n                                                     ᴬʳˡᵉᵗᵗᴮᵒᵗ⁺`
 //teks += '\n *𝓑𝔂: 𝓐𝓻𝓵𝓮𝓽𝓼𝓲𝓽𝓪 𝓫𝓸𝓽 💕* '
 //teks += '\n\n*💜 Nuevos comandos ⚠️*\n     *.aviso*\n     *.todosprem*'
         conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
